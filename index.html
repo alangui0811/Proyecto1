@@ -8,38 +8,41 @@
     <title>Registro de Alumnos</title>
   </head>
   <body>
-    <div id="contenido">
-    <div class="banner">
-
-    <h1>Registro del Alumno</h1>
-    <label for="nombreAlumno">Nombre del Alumno:</label>
-    <input type="text" id="nombreAlumno" placeholder=""/>
-
-    <label for="descripcionAlumno">Descripción:</label>
-    <input id="descripcionAlumno" placeholder=""></textarea>
-
-    <button onclick="agregarAlumno()">Agregar Alumno</button>
-
-    <br/><br/><br/>
-    <h2>Pendientes Alumnos</h2>
-    <table id="tablaAlumnos">
-      <tr>
-        <th>Nombre del Alumno</th>
-        <th>Estado</th>
-        <th>Descripción</th>
-        <th>Acciones</th>
-      </tr>
-    </table>
-
-    <br /><br /><br /><br /><br />
-    <h2>Pendientes terminados</h2>
-    <table id="tablaFinalizados">
-      <tr>
-        <th>Nombre del Alumno</th>
-        <th>Descripción</th>
-        <th>Acciones</th>
-      </tr>
-    </table>
+    <header>
+      <img  id="logousf" src="Img/logo-usf.jpg">
+    </header>
+    <main>  
+      <div id="contenido">
+        <div class="banner">
+          
+          <h1>Registro del Alumno</h1>
+          <label for="nombreAlumno">Nombre del Alumno:</label>
+          <input type="text" id="nombreAlumno" placeholder=""/>
+          
+          <label for="descripcionAlumno">Descripción:</label>
+          <input id="descripcionAlumno" placeholder=""></textarea>
+          
+          <button onclick="agregarAlumno()">Agregar Alumno</button>
+          
+          <h2>Pendientes Alumnos</h2>
+          <table id="tablaAlumnos">
+            <tr>
+              <th>Nombre del Alumno</th>
+              <th>Estado</th>
+              <th>Descripción</th>
+              <th>Acciones</th>
+            </tr>
+          </table>
+          
+          <h2>Pendientes terminados</h2>
+          <table id="tablaFinalizados">
+            <tr>
+              <th>Nombre del Alumno</th>
+              <th>Descripción</th>
+              <th>Acciones</th>
+            </tr>
+          </table>
+        </main>
     </div>
   </body>
 </html>
