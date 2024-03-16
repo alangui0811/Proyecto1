@@ -9,13 +9,13 @@
   </head>
   <body>
     <header>
-      <img  id="logousf" src="Img/logo-usf.jpg" alt="logo-usf">
+      <img  id="logousf" src="Img/logo-usf.png" alt="logo-usf">
       <nav>
         <ul>
-          <li>Tareas</li>
-          <li>Alumnos</li>
-          <li>Docentes</li>
-          <li>Reportes</li>
+          <li><a href="index.html">Tareas</a></li>
+          <li><a href="alumnos.html">Alumnos</a></li>
+          <li><a href="docentes.html">Docentes</a></li>
+          <li><a href="reportes.html">Reportes</a></li>
         </ul>
       </nav>
     </header>
@@ -25,11 +25,12 @@
         <div class="banner">
           
           <h1>Registro del Alumno</h1>
+          <br>
           <label for="nombreAlumno">Nombre del Alumno:</label>
           <input type="text" id="nombreAlumno" placeholder=""/>
-          
+          <br><br>
           <label for="descripcionAlumno">Descripción:</label>
-          <input id="descripcionAlumno" placeholder=""></textarea>
+          <input id="descripcionAlumno" placeholder="">
           
           <button onclick="agregarAlumno()">Agregar Alumno</button>
           
@@ -55,38 +56,3 @@
     </div>
   </body>
 </html>
-<!--<!DOCTYPE html>
-<html>
-<head>
-    <title>Pendientes de los Alumnos</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="./script.js"></script>
-</head>
-<body>
-    <h1>Estado de los Alumnos</h1>
-    <br>
-    <input type="text" id="nombreAlumno" placeholder="Nombre del Alumno">
-    <input type="text" id="Pendiente" placeholder="Pendiente">
-    <select id="estadoAlumno">
-        <option value="x">x</option>
-        <option value="!">!</option>
-    </select>
-    <button1 onclick="agregarAlumno()">Agregar Alumno</button>
-
-    <table id="tablaAlumnos">
-        <tr>
-            <th>Nombre del Alumno</th>
-            <th>Pendiente</th>
-            <th>Estado</th>
-        </tr>
-    </table>
-    <table id="tablaCompletados">
-        <tr>
-            <th>asdf</th>
-            <th>adsfa</th>
-            <th>adsfasdf</th>
-        </tr>
-    </table>
-</body>
-</html>
--->

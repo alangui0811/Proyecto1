@@ -1,3 +1,8 @@
+#logousf{
+  width: 100px;
+  height: 100%;
+}
+
 nav{
   position: absolute;
   top: 25px;
@@ -9,7 +14,15 @@ nav li{
   margin: 0 0 0 15px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: x-large;
-  border: 1px,solid,black;
+  border-left: 1px solid rgb(58, 58, 58);
+  padding-left: 10px;
+}
+
+nav a{
+  text-transform: uppercase;
+  color: rgb(248, 248, 248);
+  font-size:  22px;
+  text-decoration: none;
 }
 
 main{
@@ -27,13 +40,9 @@ padding: 0;
 }
 
 header{
-  background: linear-gradient(45deg,#d8d8d8,#2d66ab 75%)
+  background: linear-gradient(45deg,#ffffff,#2d66ab 75%)
 }
 
-#logousf{
-  width: 100px;
-  height: 100%;
-}
 
 body {
   background-image: url(Img/toro.jpg);
@@ -65,9 +74,8 @@ table {
   margin-right: 20px;
 }
 
-th,
-td {
-  border: 2px solid #380b0b; /* Cambiado a un tono de gris más oscuro */
+th,td {
+  border-bottom: 2px solid #380b0b; /* Cambiado a un tono de gris más oscuro */
   padding: 8px;
   text-align: left;
 }
@@ -91,12 +99,37 @@ button {
 label{
   padding-left: 20px;
 }
-/* Estilo para Nombre del Alumno y Descripción */
-#nombreAlumno,
-#descripcionAlumno {
-  padding: 3px 10px;
+
+input{
+  text-align: left;
+}
+
+#nombreAlumno{
+  padding: 3px 3px;
+  width: 200px;
   border: PowderBlue 5px solid;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
   height: auto;
+}
+
+#descripcionAlumno {
+  padding: 3px 3px;
+  width: 250px;
+  border: PowderBlue 5px solid;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: auto; 
+}
+
+#txtleft{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#Repo{
+  text-align: justify;
+  padding: 20px 30%;
+  font-size: 35px;
 }
