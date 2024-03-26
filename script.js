@@ -34,7 +34,7 @@ function agregarAlumno() {
   }
 
   function editarAlumno(button) {
-    // Implementa la lógica para editar la descripción del alumno
+
     var fila = button.parentNode.parentNode;
     var nombre = fila.cells[0].innerHTML;
     var nuevaDescripcion = prompt(
@@ -67,8 +67,7 @@ function agregarAlumno() {
 
       celda1.innerHTML = nombre;
       celda2.innerHTML = descripcion;
-      celda3.innerHTML =
-        '<button onclick="eliminarFinalizado(this)">Eliminar</button>';
+      celda3.innerHTML ='<button onclick="eliminarFinalizado(this)">Eliminar</button>';
 
       fila.remove();
     } else {
@@ -93,53 +92,3 @@ function agregarAlumno() {
     var filaFinalizado = button.parentNode.parentNode;
     filaFinalizado.remove();
   }
-/*function agregarAlumno() {
-    if (document.getElementById("nombreAlumno").value != ""
-    &&
-    document.getElementById("Pendiente").value != "") {
-        var tabla = document.getElementById("tablaAlumnos");
-        var nombre = document.getElementById("nombreAlumno").value;
-        var estado = document.getElementById("estadoAlumno").value;
-        var pendiente = document.getElementById("Pendiente").value;
-        
-            var fila = tabla.insertRow(-1);
-            var celda1 = fila.insertCell(0);
-            var celda2 = fila.insertCell(1);
-            var celda3 = fila.insertCell(2);
-            var celda4 = fila.insertCell(3);
-            var celda5 = fila.insertCell(4);
-            
-            
-            celda1.innerHTML = nombre;
-            celda2.innerHTML = pendiente;
-            celda3.innerHTML = `<select>
-            <option value="${estado}">${estado}</option>
-            <option value="${estado === 'x' ? '!' : 'x'}">${estado === 'x' ? '!' : 'x'}</option>
-            </select>`;
-            celda4.innerHTML = '<button onclick="eliminarAlumno(this)">Eliminar</button>';
-            celda5.innerHTML = '<button onclick="completar(this)">Finalizar</button>';
-
-        document.getElementById("nombreAlumno").value = "";
-        document.getElementById("Pendiente").value = "";
-    }
-}
-
-function completar() {
-    var tabla = document.getElementById("tablaCompletados");
-    var nombre = document.getElementById("nombreAlumno").value;
-    var pendiente = document.getElementById("Pendiente").value;
-    
-    var fila = tabla.parentNode.parentNode;
-    var celda1 = fila.insertCell(0);
-    var celda2 = fila.insertCell(1);
-    var celda3 = fila.insertCell(2);
-
-    celda1.innerHTML = nombre;
-    celda2.innerHTML = pendiente;
-    celda3.innerHTML = "✔";
-}
-function eliminarAlumno(boton) {
-    var fila = boton.parentNode.parentNode;
-    fila.parentNode.removeChild(fila);
-}
-*/

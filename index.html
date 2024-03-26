@@ -7,6 +7,7 @@
     <script src="./script.js"></script>
     <title>Registro de Alumnos</title>
   </head>
+  
   <body>
     <header>
       <img  id="logousf" src="Img/logo-usf.png" alt="logo-usf">
@@ -22,20 +23,19 @@
 
     <main>  
       <div id="contenido">
-        <div class="banner">
-          
+
           <h1>Registro del Alumno</h1>
-          <br>
-          <label for="nombreAlumno">Nombre del Alumno:</label>
-          <input type="text" id="nombreAlumno" placeholder=""/>
-          <br><br>
+          <div>
+            <label for="nombreAlumno">Nombre del Alumno:</label>
+            <input type="text" id="nombreAlumno" placeholder=""/>
+          </div>
+          
           <label for="descripcionAlumno">Descripción:</label>
           <input id="descripcionAlumno" placeholder="">
-          
           <button onclick="agregarAlumno()">Agregar Alumno</button>
-          
+
           <h2>Pendientes Alumnos</h2>
-          <table id="tablaAlumnos">
+          <table id="tablaAlumnos" class="tablaPendientes">
             <tr>
               <th>Nombre del Alumno</th>
               <th>Estado</th>
@@ -45,14 +45,14 @@
           </table>
           
           <h2>Pendientes terminados</h2>
-          <table id="tablaFinalizados">
+          <table class="tablaPendientes">
             <tr>
               <th>Nombre del Alumno</th>
               <th>Descripción</th>
               <th>Acciones</th>
             </tr>
           </table>
-        </main>
-    </div>
+      </div>
+    </main>
   </body>
 </html>
