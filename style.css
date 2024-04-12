@@ -149,3 +149,16 @@ p{
 #ald{
   background-color: #2d66ab;
 }
+
+#re{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.repo{
+  height: 100px;
+  width: 500px;
+  margin: 10px;
+}
